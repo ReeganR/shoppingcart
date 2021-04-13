@@ -1,0 +1,11 @@
+@mixin default--flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin cart--flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 1rem;
+}

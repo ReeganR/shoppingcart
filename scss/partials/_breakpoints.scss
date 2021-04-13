@@ -1,0 +1,155 @@
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 600px) { 
+    header{
+        position: relative;
+        z-index: 2;
+    }
+    .title--contents{
+        flex-direction: column;
+        .img--contents{
+            margin: 10px 0;
+        }
+    }
+    .row-1{
+.content-1, .content-2{
+    margin-bottom: 0px;
+}
+    }
+    .row--2{
+        .row--contents{
+        .two--columns{
+          width: 100%;
+            }
+        }
+    }
+    .user--admin{
+        display: none !important;
+    }
+    .addto--cart .cart--items {
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        left: 0;
+        right: 0 !important;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) { 
+    .addto--cart{
+        .cart--items{
+            right: 0 !important;
+            left: 0;
+            margin: 0 auto;
+        }
+    }
+}
+@media (min-width: 768px) {
+    #body--contents{
+    .column{
+        margin-bottom: 0px !important;
+    }    
+    }
+   .row-1{
+       flex-direction: row !important;
+       .content-1{
+           margin-right: 20px;
+           width: 50%;
+       }
+       .content-2{
+        width: 50%;
+        flex-grow: 1;
+    }
+    .content-2{
+        margin-top: 0px !important
+    }
+   }
+   .row--2{
+       display: flex;
+    .row--contents{
+       margin-right: 20px;
+       width: 50%;
+    .two--columns{
+        display: flex;
+        width: 100%;
+        }
+    }
+    .single--column{
+        width: 100%;
+    }
+    .row--body{
+        width: 50%;
+        margin-top: 0px !important;
+    }
+}
+
+.row--3{
+    .equal--columns{
+        flex-direction: row !important;
+        .column{
+            flex-grow: 1;
+            width: 50% !important;
+        }
+       .column-1{
+           margin-right: 20px;
+       }
+    }
+}
+
+.addto--cart{
+    .cart--items{
+        right: 146px !important;
+    }
+}
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+#body--wrapper{
+    display: flex;        
+    }
+   header{
+       width: 220px;
+       position: fixed;
+       left: 0;
+       width: 220px;
+       bottom: 0;
+       top: 0;
+       overflow: hidden;
+       #nav--header{
+           display: block !important;
+           position: relative;
+           min-width: 220px;
+           .close--btn{
+               display: none !important;
+           }
+       }
+   }
+   main{
+       position: fixed;
+       right: 13px;
+       left: 233px;
+       border-right: 2px solid grayscale($color: #000000);
+       overflow: hidden;
+   }
+   .nav--items{
+    .hamburger--menu{
+        display: none !important;
+    }
+    .item--primary{
+        display: block !important;
+    }
+}
+   .row-1{
+    .content-1{
+        width: 300px;
+    }
+}
+.row--2{
+    .row--contents {
+       width: 300px;
+    }
+}
+ }
